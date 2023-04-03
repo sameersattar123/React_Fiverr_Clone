@@ -1,0 +1,96 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #013401;
+    color: white;
+    position: sticky;
+    transition: 0.6s all ease;
+    top: 0%;
+
+    &.active{
+       color: #000;
+       background-color: white;
+    }
+    .container{
+        width: 1500px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0px;
+        .logo{
+            font-size: 34px;
+            font-weight: bold;
+            .text{
+
+            }
+            .dot{
+                color: rgb(34, 184, 34);
+            }
+        }
+        .links{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+        
+            .user{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                position: relative;
+                img{
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+                    .options{
+                        position: absolute;
+                        top: 50px;
+                        border-radius: 10px;
+                        border: 2px solid white;
+                        right: 0;
+                        background-color: white;
+                        padding: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        color: gray;
+                        width: 320px;
+                }
+           
+        }
+        button{
+            border-radius: 4px;
+            border: 2px solid #000;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: transparent;
+            color: white;
+           &:hover{
+            background-color: #1dbf73;  
+            border-color: #1dbf73;
+           } 
+        }
+    }
+}
+hr{
+    width: 100%;
+    height: 0;
+
+}
+.menu{
+    width: 1400px;
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-weight: 300;
+}
